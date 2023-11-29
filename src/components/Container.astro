@@ -1,0 +1,79 @@
+---
+import * as CONTENT from "../pages/content"
+import AccordionLayout from "../layouts/AccordionLayout.astro";
+import Card from "./Card.astro";
+---
+
+<ul class="shadow-box">
+  <AccordionLayout title={"Sobre mi:"} icon={"mdi:account-badge-outline"}>
+    {CONTENT.about}
+  </AccordionLayout>
+    
+  <AccordionLayout title={"Educación"} icon={"carbon:education"}>
+    {
+      CONTENT.education.map((item) => {
+        return (
+          <Card
+            title={item.course}
+            timeframe={`${item.from} - ${item.to}`}
+            description={item.location}
+            tags={""}
+            url={"#"}
+            url_name={item.institute}
+          />
+        );
+      })
+    }
+  </AccordionLayout>
+    <AccordionLayout title={"Proyectos"} icon={"ion:md-build"}>
+      {
+        CONTENT.projects.map((item) => {
+          return (
+            <Card
+              title={item.title}
+              timeframe="2022-2023"
+              description={item.description}
+              tags={item.tech}
+              url={item.url}
+              url_name={"Open Project"}
+            />
+          );
+        })
+      }
+    </AccordionLayout>
+
+    
+
+    <AccordionLayout title={"Certificaciones"} icon={"carbon:certificate"}>
+      {
+        CONTENT.certificates.map((item) => {
+          return (
+            <Card
+              title={item.title}
+              timeframe={item.issued}
+              description={item.org}
+              tags={item.description}
+              url={item.url}
+              url_name={"View Certificate"}
+            />
+          );
+        })
+      }
+    </AccordionLayout>
+    <AccordionLayout title={"Contactame"} icon={"ri:contacts-book-fill"}>
+      {
+        CONTENT.contact.map((item) => {
+          return (
+            <Card
+              title={""}
+              timeframe=""
+              description=""
+              tags=""
+              url={item.source}
+              url_name={item.source_name}
+            />
+          );
+        })
+      }
+    </AccordionLayout>
+</ul>
