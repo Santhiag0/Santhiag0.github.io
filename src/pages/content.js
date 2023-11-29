@@ -9,17 +9,6 @@ export const website = "https://www.linkedin.com/in/thiag0/"
 export const about = "Soy un joven trabajador, un gran compañero de equipo y líder, me gusta aprender cosas nuevas, además de poder compartir mi experiencia y a su vez sumar nuevos conocimientos, destaco en el ámbito de ayudar y servir a los demás con una gran actitud, en especial me gusta mucho la tecnología, la administración y soy excelente hablando en público, estoy siempre dispuesto a aprender y colaborar."
 
 // Work Experience --> #work section
-export const work = [
-	{
-		from: "2001",
-		to: "Present",
-		role: "Safety Inspector",
-		org: "Quahog Safety Department",
-		org_url: "https://quahog.gov/safety",
-		location: "Quahog, Rhode Island",
-		skills: "Safety Inspection, Risk Assessment, Emergency Response"
-	}
-]
 
 // Projects --> #project section
 export const projects = [
@@ -70,7 +59,7 @@ export const contact = [
 	},
 	{
 		source_name: "Twitter",
-		source: "https://twitter.com/Josue",
+		source: "https://youtube.com",
 	},
 	{
 		source_name: "LinkedIn",
@@ -89,14 +78,14 @@ export const certificates = [
 		issued: "2022",
 		title: "Cisco Packet Tracer Introduction",
 		org: "CISCO",
-		url: "https://certi.com/url",
+		url: "https://youtube.com",
 		description: "Certificación por seguir el curso de CISCO PACKET TRACER",
 	},
 	{
 		issued: "2023",
 		title: "CSEI IV",
 		org: "UTA",
-		url: "https://certi.com/url",
+		url: "https://youtube.com",
 		description: "Aprobación por congreso CSEI IV",
 	},
 ]
